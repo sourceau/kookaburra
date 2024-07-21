@@ -1,6 +1,23 @@
 //Test
 alert("working");
 
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.150.0/build/three.module.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFExporter } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/exporters/GLTFExporter.js';
+import { RGBELoader } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/loaders/RGBELoader.js';
+import { DragControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/controls/DragControls.js';
+import { TransformControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/controls/TransformControls.js';
+import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/postprocessing/RenderPass.js';
+import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/postprocessing/ShaderPass.js';
+import { RGBShiftShader } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/shaders/RGBShiftShader.js';
+import { GammaCorrectionShader } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/shaders/GammaCorrectionShader.js';
+import { HorizontalTiltShiftShader } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/shaders/HorizontalTiltShiftShader.js';
+import { VerticalTiltShiftShader } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/shaders/VerticalTiltShiftShader.js';
+import { SMAAPass } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/postprocessing/SMAAPass.js';
+
+
 var version = 150;
 var container, stats;
 var composer;
