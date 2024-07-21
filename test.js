@@ -1,7 +1,6 @@
 //Test
 alert("working");
-
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.150.0/build/three.module.js';
+import * as THREE from 'https://cdn.skypack.dev/three@0.150.0';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/loaders/GLTFLoader.js';
 import { GLTFExporter } from 'https://cdn.jsdelivr.net/npm/three@0.150.0/examples/jsm/exporters/GLTFExporter.js';
