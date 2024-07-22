@@ -18,6 +18,7 @@ import { VerticalTiltShiftShader } from "VerticalTiltShiftShader";
 import { SMAAPass } from "SMAAPass";
 
 import TWEEN from "https://cdn.jsdelivr.net/npm/@tweenjs/tween.js@18.5.0/dist/tween.esm.js";
+import TINYCOLOR from "https://cdn.jsdelivr.net/npm/tinycolor2@1.6.0/cjs/tinycolor.min.js";
 
 var version = 150;
 var container, stats;
